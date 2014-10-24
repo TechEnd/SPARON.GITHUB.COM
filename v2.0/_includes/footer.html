@@ -1,0 +1,23 @@
+<footer class='footer'>
+	<span>Copyright 2014, SPARON</span>
+
+	<div class='pure-menu pure-menu-horizontal pure-menu-open'>
+		<ul>
+
+			<li><a href='/atom.xml'>RSS feed</a></li>
+
+			{% if site.username_google %}
+			<li><a href='https://plus.google.com/{{ site.username_google }}?rel=author'>Google+</a></li>
+			{% endif %}
+
+			{% if site.username_zhihu %}
+			<li><a href='https://twitter.com/{{ site.username_twitter }}'>Twitter</a></li>
+			{% endif %}
+
+			{% if site.username_github %}
+			<li><a href='https://github.com/{{ site.username_github }}'>GitHub</a></li>
+			{% endif %}
+
+		</ul>
+	</div>
+</footer>

@@ -1,0 +1,11 @@
+/* TEAM */
+	Geek & Site owner: SPARON
+	Site: sparon [AT] gmail.com
+	Twitter: @sparon
+	Location: ChengDu.
+
+
+/* SITE */
+	Standards: HTML5, CSS3
+	Components: Pure (Yahoo CSS framework)
+	Software: Jekyll, s3cmd

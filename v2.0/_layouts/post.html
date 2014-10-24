@@ -1,0 +1,78 @@
+---
+layout: default
+---
+
+<section class='post'>
+	<header class='post-header'>
+		<h2 class='post-title'> {{ page.title }} </h2>
+		<div class='post-meta'>
+			Posted on <time class='date' datetime='{{ page.date | date: "%Y-%m-%dT00:00:00+01:00" }}'>{{ page.date | date_to_string }}</time>
+		</div>
+
+		<!--
+		<div class="bshare-custom" style="float:right;">
+			<a title="分享到QQ好友" class="bshare-qqim"></a>
+			<a title="分享到QQ空间" class="bshare-qzone"></a>
+			<a title="分享到推他" class="bshare-tuita"></a>
+			<a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+			<a title="分享到有道笔记" class="bshare-youdaonote"></a>
+			<a title="分享到网易微博" class="bshare-neteasemb"></a>
+			<a title="分享到人人网" class="bshare-renren"></a>
+			<a title="分享到豆瓣" class="bshare-douban"></a>
+			<a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a>
+		</div>
+		<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=76ea4f8f-42a9-4b2d-8e6f-6c9bd3f59ca0&amp;pophcol=1&amp;lang=zh"></script>
+		<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+		-->
+
+		<div class="bdsharebuttonbox" style="float:right;">
+			<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+			<a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+			<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+			<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+			<a href="#" class="bds_diandian" data-cmd="diandian" title="分享到点点网"></a>
+			<a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+			<a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+			<a href="#" class="bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+			<a href="#" class="bds_mshare" data-cmd="mshare" title="分享到一键分享"></a>
+			<a href="#" class="bds_more" data-cmd="more"></a>
+		</div>
+		<script>
+			window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","renren","weixin","sqq","douban","diandian","linkedin","print","mshare"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","renren","weixin","sqq","douban","diandian","linkedin","print","mshare"]}};
+			with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+		</script>
+
+
+	</header>
+
+	<div class='post-description'>
+		{{ content }}
+	</div>
+
+	<!-- 
+	<div style='margin: 25px 0; text-align:center'>
+		<a class='pure-button' href="http://twitter.com/share?url={{ site.url | cgi_escape}}{{page.url | cgi_escape }}&text={{page.title | cgi_escape}}&via=Xafke" target='_blank'>
+	    	Like it? Tweet it.
+		</a>
+	</div>
+	-->
+</section>
+
+<div id='comments'>
+
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'sparon'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+
+	<noscript>Please enable JavaScript to view the comments</noscript>
+
+</div>

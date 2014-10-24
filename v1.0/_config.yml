@@ -1,0 +1,17 @@
+# Site settings
+title: ZKer	
+email: sparon@qq.com
+qq: 4470565
+description: > # this means to ignore newlines until "baseurl:"
+  终于有自己的博客啦！
+  晚些时候可能会发点随笔和一些技术教程。
+  欢迎大家光临！~
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://sparon.github.io/" # the base hostname & protocol for your site
+twitter_username: SPARON
+github_username:  SPARON
+zhihu_username: zhao-ke-yong
+pages: 关于我
+
+# Build settings
+markdown: redcarpet

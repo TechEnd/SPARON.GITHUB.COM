@@ -1,0 +1,17 @@
+<head>
+
+	<meta charset='UTF-8'>
+	<meta name='keywords' content='{{ page.keywords }}'/>
+	<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'>
+	<meta name='description' content='{{ page.quote }}'/>
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+	<link rel='stylesheet' type='text/css' href='/assets/style.css'>
+	<link rel='alternate' type='application/rss+xml' title='SPARON Feed' href='/atom.xml'>
+	<link rel='shortcut icon' href='/assets/favicon.ico' type='image/x-icon'>
+	<link rel='icon' href='/assets/favicon.ico' type='image/x-icon'>
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+
+</head>

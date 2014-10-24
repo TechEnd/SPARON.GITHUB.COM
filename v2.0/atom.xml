@@ -1,0 +1,32 @@
+---
+layout: nil
+---
+<?xml version='1.0'?>
+<feed xmlns='http://www.w3.org/2005/Atom'>
+	<title>{{ site.title }}</title>
+	<link href='{{ site.url }}'/>
+	<link type='application/atom+xml' rel='self' href='{{ site.url }}/atom.xml'/>
+	<updated>{{ site.time | date_to_xmlschema }}</updated>
+	<id>{{ site.url }}</id>
+
+	<author>
+		<name>{{ site.username_github }}</name>
+		<email>{{ site.username_google }}@gmail.com</email>
+	</author>
+
+	{% for post in site.posts limit:15 %}
+	<entry>
+		<title>{{ post.title | xml_escape }}</title>
+		<link type='text/html' href='{{ site.url }}{{ post.url }}'/>
+		<id>{{ site.url }}{{ post.url }}</id>
+		<updated>{{ post.date | date_to_xmlschema }}</updated>
+
+		<author>
+			<name>{{ site.username_github }}</name>
+			<uri>{{ site.url }}</uri>
+		</author>
+
+		<content type='html'>{{ post.content | preview | xml_escape }}</content>
+	</entry>
+  {% endfor %}
+</feed>
